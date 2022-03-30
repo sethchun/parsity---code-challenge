@@ -2,7 +2,7 @@ const findSum = function(array) {
     let sum = array.reduce((accumulator, currentValue) => {
         return accumulator + currentValue;
     });
-    console.log(sum);
+    return sum;
 };
   
 const findFrequency = function(array) {
@@ -49,7 +49,7 @@ const removeParenth = function(str) {
        }
     }
     toBeRemoved += str.substring(startIn, endIn);
-    console.log(str.replace(toBeRemoved, ''));
+    return str.replace(toBeRemoved, '');
 };
   
 const scoreScrabble = function(str) {
@@ -89,5 +89,5 @@ const scoreScrabble = function(str) {
             }
         }
     }
-    console.log(score);
+    return score;
 };
